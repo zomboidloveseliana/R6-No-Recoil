@@ -48,8 +48,8 @@ namespace ButtonHandler
     {
         IsAttackerView = false;
         Scenes::ChangeCurrentScene(SceneType::OperatorSelection);
-        Buttons::CreateOperatorSelectionButtons();
 
+        Buttons::CreateOperatorSelectionButtons();
         WindowUtils::InvalidateWindow(hwnd);
     }
 
@@ -106,6 +106,15 @@ namespace ButtonHandler
     {
         system("start UpdateTool.bat");
 
+        WindowUtils::InvalidateWindow(hwnd);
+    }
+
+    void HandleController(HWND hwnd)
+    {
+        EnableController = !EnableController;
+        Files::SaveConfig();
+
+        Buttons::CreateOperatorSelectionButtons();
         WindowUtils::InvalidateWindow(hwnd);
     }
 

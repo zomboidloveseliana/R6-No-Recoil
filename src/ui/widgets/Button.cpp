@@ -54,7 +54,11 @@ namespace Buttons
             { 11, startX + 100, startY + 100, 140, 40, "Save Preset" });
 
         ButtonsVector.push_back(
-            { 12, startX + 100, startY + 400, 160, 40, "Update Tool" });
+            { 12, startX, startY + 400, 160, 40, "Update Tool" });
+
+        ButtonsVector.push_back(
+            { 13, startX + 180, startY + 400, 160, 40,
+              EnableController ? "Disable Controller" : "Enable Controller" });
     }
 
 } // namespace Buttons
