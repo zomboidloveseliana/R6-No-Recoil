@@ -29,9 +29,6 @@ namespace Files
         len += sprintf_s(
             buffer + len, bufferSize - len, "HorizontalRecoil = %.2f\r\n",
             CurrentRecoil.Horizontal);
-        len += sprintf_s(
-            buffer + len, bufferSize - len, "RapidFire = %s\r\n",
-            RapidFire ? "true" : "false");
         len += sprintf_s(buffer + len, bufferSize - len, "\r\n");
 
         // [Controller]
@@ -58,8 +55,7 @@ namespace Files
             buffer + len, bufferSize - len,
             "# Toggle Key (e.g. 20 = CAPS LOCK)\r\n");
         len += sprintf_s(
-            buffer + len, bufferSize - len, "ToggleKey = %d\r\n",
-            ToggleKey);
+            buffer + len, bufferSize - len, "ToggleKey = %d\r\n", ToggleKey);
         len += sprintf_s(
             buffer + len, bufferSize - len, "ToggleKeyEnabled = %s\r\n",
             UseToggleKey ? "true" : "false");
@@ -151,10 +147,6 @@ namespace Files
                     CurrentRecoil.Vertical = static_cast<float>(atof(value));
                 else if (StringUtils::StringEquals(key, "HorizontalRecoil"))
                     CurrentRecoil.Horizontal = static_cast<float>(atof(value));
-                else if (StringUtils::StringEquals(key, "RapidFire"))
-                    RapidFire
-                        = (StringUtils::StringEquals(value, "true")
-                           || StringUtils::StringEquals(value, "1"));
             }
             else if (StringUtils::StringEquals(section, "Controller"))
             {

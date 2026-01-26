@@ -2,7 +2,6 @@
 Enabled = true
 VerticalRecoil = 3.00
 HorizontalRecoil = 0.00
-RapidFire = false
 
 [Controller]
 Enabled = false

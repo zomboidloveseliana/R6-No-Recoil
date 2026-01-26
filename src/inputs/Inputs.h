@@ -46,9 +46,4 @@ namespace Inputs
      */
     bool IsControllerFiring(const XINPUT_STATE& state);
 
-    /*
-     * Simulates a controller trigger press to fire.
-     */
-     void FireMouseClick();
-
 } // namespace Inputs

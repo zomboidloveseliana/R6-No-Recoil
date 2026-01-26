@@ -57,9 +57,6 @@ namespace ClickDetection
                     case 12:
                         ButtonHandler::HandleUpdateTool(hwnd);
                         break;
-                    case 13:
-                        ButtonHandler::HandleRapidFire(hwnd);
-                        break;
 
                     default:
                         break;

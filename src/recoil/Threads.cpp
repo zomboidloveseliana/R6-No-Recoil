@@ -14,8 +14,6 @@ inline constexpr int FIRE_DELAY_MS = 5;
 inline constexpr int TOGGLE_DELAY_MS = 300;
 inline constexpr int POLL_INTERVAL_MS = 50;
 
-inline constexpr int DMR_FIRE_DELAY_MS = 50;
-
 inline constexpr const char* WINDOW_TITLE = "R6 No Recoil";
 
 static HWND GetWindowHandle()
@@ -48,7 +46,6 @@ static void LoadWeaponRecoil(int weaponIndex)
 DWORD WINAPI WorkerThreadProc(LPVOID)
 {
     ULONGLONG lastMoveTime = 0;
-    ULONGLONG lastRapidFireTime = 0;
 
     while (Running)
     {
@@ -64,17 +61,6 @@ DWORD WINAPI WorkerThreadProc(LPVOID)
         const bool firingMouse = Inputs::IsMouseFiring();
         const bool firingController = controllerConnected
             && Inputs::IsControllerFiring(Inputs::GetControllerState());
-
-        if (RapidFire && isADS && (firingMouse || firingController))
-        {
-            if (now - lastRapidFireTime >= DMR_FIRE_DELAY_MS)
-            {
-                Inputs::FireMouseClick();
-                lastRapidFireTime = now;
-            }
-            Sleep(1);
-            continue;
-        }
 
         if (EnableRC && isADS && (firingMouse || firingController))
         {

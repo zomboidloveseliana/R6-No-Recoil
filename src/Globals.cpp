@@ -7,8 +7,6 @@ bool EnableRC = true;
 bool Running = true;
 bool IsAttackerView = true;
 
-bool RapidFire = false;
-
 bool EnableController = false;
 
 bool UseToggleKey = false;

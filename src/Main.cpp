@@ -5,14 +5,13 @@
 
 #include "Globals.h"
 
-#include "core/Threads.h"
-
 #include "detection/ClickDetection.h"
 #include "drawing/Drawing.h"
 
 #include "files/Files.h"
 
 #include "recoil/Recoil.h"
+#include "recoil/Threads.h"
 #include "scenes/Scenes.h"
 
 #include "ui/Bitmap.h"

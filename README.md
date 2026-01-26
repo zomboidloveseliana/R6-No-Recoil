@@ -64,7 +64,6 @@ The app automatically creates a `Config.toml` file on first run. You can manuall
 Enabled = true
 VerticalRecoil = 3.00
 HorizontalRecoil = 0.00
-RapidFire = false
 
 [Controller]
 Enabled = false
@@ -94,7 +93,6 @@ LineColour = RGB(180, 180, 180)
 - **Enabled:** Enable or disable recoil adjustment.
 - **VerticalRecoil:** The vertical recoil compensation value.
 - **HorizontalRecoil:** The horizontal recoil compensation value (Positive goes right, negative goes left).
-- **RapidFire:** Enable if you want rapid fire mode for DMRs.
 
 #### [Controller]
 

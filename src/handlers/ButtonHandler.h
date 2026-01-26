@@ -21,6 +21,5 @@ namespace ButtonHandler
 
     void HandleSavePreset(HWND hwnd);
     void HandleUpdateTool(HWND hwnd);
-    void HandleRapidFire(HWND hwnd);
 
 } // namespace ButtonHandler

@@ -112,17 +112,6 @@ namespace Drawing
             memDC, toggleText, -1, &textRect,
             DT_LEFT | DT_VCENTER | DT_SINGLELINE);
 
-        // Rapid Fire
-        textRect.left = textRect.right + innerPadding;
-        textRect.right = infoBoxRect.left + 4 * sectionWidth - innerPadding;
-        char rapidFireText[50];
-        sprintf_s(
-            rapidFireText, "Rapid Fire: %s",
-            RapidFire ? "Enabled" : "Disabled");
-        DrawText(
-            memDC, rapidFireText, -1, &textRect,
-            DT_LEFT | DT_VCENTER | DT_SINGLELINE);
-
         // Version
         textRect = { infoBoxRect.left + 4 * sectionWidth + innerPadding,
                      infoBoxRect.top + 5,

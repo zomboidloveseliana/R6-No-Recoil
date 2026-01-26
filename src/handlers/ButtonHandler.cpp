@@ -109,12 +109,4 @@ namespace ButtonHandler
         WindowUtils::InvalidateWindow(hwnd);
     }
 
-    void HandleRapidFire(HWND hwnd)
-    {
-        RapidFire = !RapidFire;
-        Files::SaveConfig();
-
-        WindowUtils::InvalidateWindow(hwnd);
-    }
-
 } // namespace ButtonHandler
