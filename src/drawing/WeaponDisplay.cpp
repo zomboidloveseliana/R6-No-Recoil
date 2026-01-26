@@ -61,6 +61,8 @@ namespace Drawing
         int keyWidth = static_cast<int>(weaponWidth * 0.25f);
         int keyHeight = static_cast<int>(bottom * 0.032f);
 
+        HBRUSH lineBrush = CreateSolidBrush(LineColour);
+
         for (int i = 0; i < weaponCount; ++i)
         {
             int x = startX + i * (weaponWidth + spacing);
@@ -122,15 +124,13 @@ namespace Drawing
                 DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 
             // Toggle button
-            HBRUSH buttonBrush = CreateSolidBrush(LineColour);
             RECT buttonRect = LayoutUtils::WeaponDisplayLayout::
                 GetToggleButtonRect(x, y, weaponWidth, weaponHeight, bottom);
 
-            FrameRect(memDC, &buttonRect, buttonBrush);
+            FrameRect(memDC, &buttonRect, lineBrush);
             DrawText(
                 memDC, "Toggle", -1, &buttonRect,
                 DT_CENTER | DT_VCENTER | DT_SINGLELINE);
-            DeleteObject(buttonBrush);
 
             // Draw preset buttons
             for (int p = 0; p < 3; ++p)
@@ -146,7 +146,6 @@ namespace Drawing
                         + buttonHeight
                 };
 
-                HBRUSH lineBrush = CreateSolidBrush(LineColour);
                 FrameRect(memDC, &btnRect, lineBrush);
 
                 char presetText[32];
@@ -162,8 +161,6 @@ namespace Drawing
                     memDC, presetText, -1, &btnRect,
                     DT_CENTER | DT_VCENTER | DT_SINGLELINE);
                 SelectObject(memDC, oldBtnFont);
-
-                DeleteObject(lineBrush);
             }
         }
 
@@ -189,6 +186,8 @@ namespace Drawing
             memDC, "Back", -1, &backBtn,
             DT_CENTER | DT_VCENTER | DT_SINGLELINE);
         FrameRect(memDC, &backBtn, (HBRUSH)GetStockObject(GRAY_BRUSH));
+
+        DeleteObject(lineBrush);
     }
 
 } // namespace Drawing
