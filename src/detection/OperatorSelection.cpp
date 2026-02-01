@@ -33,12 +33,6 @@ namespace ClickDetection
                     case 4:
                         ButtonHandler::HandleSwitchToDefenders(hwnd);
                         break;
-                    case 5:
-                        ButtonHandler::HandleSupportProject(hwnd);
-                        break;
-                    case 6:
-                        ButtonHandler::HandleJoinDiscord(hwnd);
-                        break;
                     case 7:
                         ButtonHandler::HandleVerticalRecoilPlus(hwnd);
                         break;
@@ -53,9 +47,6 @@ namespace ClickDetection
                         break;
                     case 11:
                         ButtonHandler::HandleSavePreset(hwnd);
-                        break;
-                    case 12:
-                        ButtonHandler::HandleUpdateTool(hwnd);
                         break;
                     case 13:
                         ButtonHandler::HandleController(hwnd);

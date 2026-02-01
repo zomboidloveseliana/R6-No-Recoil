@@ -53,16 +53,6 @@ namespace ButtonHandler
         WindowUtils::InvalidateWindow(hwnd);
     }
 
-    void HandleSupportProject(HWND)
-    {
-        system("start https://ko-fi.com/harryhopkinson");
-    }
-
-    void HandleJoinDiscord(HWND)
-    {
-        system("start https://discord.gg/KhdXPqQxK8");
-    }
-
     void HandleVerticalRecoilPlus(HWND hwnd)
     {
         CurrentRecoil.Vertical = round(CurrentRecoil.Vertical + 0.5f);
@@ -98,13 +88,6 @@ namespace ButtonHandler
     void HandleSavePreset(HWND hwnd)
     {
         Files::SaveWeaponData(PresetIndex);
-
-        WindowUtils::InvalidateWindow(hwnd);
-    }
-
-    void HandleUpdateTool(HWND hwnd)
-    {
-        system("start UpdateTool.bat");
 
         WindowUtils::InvalidateWindow(hwnd);
     }

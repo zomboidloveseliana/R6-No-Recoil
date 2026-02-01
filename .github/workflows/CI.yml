@@ -13,7 +13,7 @@ jobs:
 
             - name: Build the Project with CMake
               run: |
-                  cmake -S . -B build -G "Visual Studio 17 2022" -A x64
+                  cmake -S . -B build -G "Visual Studio 18 2026" -A x64
                   cmake --build build --config Release --target R6NoRecoil
 
             - name: Strip symbols from executable
@@ -25,13 +25,11 @@ jobs:
                   copy build\Config.toml R6NoRecoil\
                   copy build\WeaponData.json R6NoRecoil\
                   copy build\Release\R6NoRecoil.exe R6NoRecoil\
-                  copy scripts\UpdateTool.bat R6NoRecoil\
-                  xcopy assets R6NoRecoil\assets /E /I /Y
-
+               
             - name: Upload artifact
               uses: actions/upload-artifact@v6
               with:
-                  name: R6NoRecoil
+                  name: R6NoRecoilx
                   path: R6NoRecoil
 
     website:

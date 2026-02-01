@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\Globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\core\Keys.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\core\String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\detection\OperatorSelection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\detection\WeaponDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\drawing\OperatorSelection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\drawing\WeaponDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\files\Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\files\Path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\files\WeaponData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\handlers\ButtonHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\inputs\Controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\inputs\Mouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\recoil\Recoil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\recoil\Threads.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\scenes\Scenes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\ui\Bitmap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\ui\Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\ui\Themes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\ui\widgets\Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\ui\widgets\Toolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\uhhlu\OneDrive\Documents\GitHub\R6-No-Recoil\src\resource\resource.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{AE43F534-64FC-3794-B227-2BC98869EEEC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

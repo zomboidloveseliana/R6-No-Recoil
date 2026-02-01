@@ -13,3 +13,11 @@ void DebugMessageString(const char* label, const char* value)
     sprintf(buf, "%s: %s", label, value);
     MessageBoxA(NULL, buf, "Debug Message", MB_OK | MB_ICONINFORMATION);
 }
+cpp
+#ifdef _DEBUG
+    void
+    DebugMessageInt(const char* label, int value)
+{
+    // ... pop up code ...
+}
+#endif
